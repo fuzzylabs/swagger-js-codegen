@@ -129,6 +129,12 @@ methods:
         - LOCK
         - UNLOCK
         - PROPFIND
+      isParameters:
+        type: boolean
+        description: true if request is not empty
+      isAuth:
+        type: boolean
+        description: true if request url starts with /auth/ (url non-public)
       isGET:
         type: string
         description: true if method === 'GET'
